@@ -1,0 +1,5 @@
+baseURL = 'https://blog.fenv.net/'
+languageCode = 'zh-CN'
+title = '学记'
+theme = 'fenv'
+buildDrafts = true
