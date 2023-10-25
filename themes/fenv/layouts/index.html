@@ -1,8 +1,8 @@
 {{ define "main" -}}
 {{ range .Site.RegularPages -}}
-    <div class="post-list">
-        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-        <div class="summary">{{ .Summary }}</div>
+    <div class="card" style="margin-top: 0.5em;">
+        <h1 class="is-marginless"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        <div class="summary">{{ .Content }}</div>
         {{ if .Truncated }}
         <div class="read-more-link">
           <a href="{{ .RelPermalink }}">Read More…</a>
