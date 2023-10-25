@@ -14,13 +14,13 @@ return result
 ```
 
 ```javascript
-            const queryPage = async (query, page, size, fields) => {
-                const total = await query.clone().count('*', { as: 'count' })
-                if (fields) {
-                    query.select(fields)
-                }
-                const rows =  query.offset((page - 1) * size).limit(size)
-                const rst = { total: total[0].count, records: await rows, current: page.page, size: page.size }
-                return rst
-            }
+const queryPage = async (query, page, size, fields) => {
+    const total = await query.clone().count('*', { as: 'count' })
+    if (fields) {
+        query.select(fields)
+    }
+    const rows =  query.offset((page - 1) * size).limit(size)
+    const rst = { total: total[0].count, records: await rows, current: page.page, size: page.size }
+    return rst
+}
 ```
