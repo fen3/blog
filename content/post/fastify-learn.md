@@ -33,7 +33,7 @@ fastify.listen(3000, function (err, address) {
 })
 ```
 
-## 启动服务器
+### 启动服务器
 ```shell
 pnpm start
 ```
