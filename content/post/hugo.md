@@ -23,7 +23,7 @@ theme = hyde
 
 ## 创建文章
 ```shell
-hugo new posts/learn-hugo.md
+hugo new postfa/learn-hugo.md
 ```
 找到 content/post/learn-hugo.md ，并写上内容
 
