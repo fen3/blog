@@ -33,5 +33,7 @@ hugo server -D
 ```
 根据提示打开网址，就可以看到网站了
 
+## 修改样式
+照着 hyde 的改，用chota.css来改，把form grid nav table等不需要的删除掉。
 
 
